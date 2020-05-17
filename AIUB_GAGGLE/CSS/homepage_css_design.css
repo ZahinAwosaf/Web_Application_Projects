@@ -1,0 +1,866 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+
+
+/*Header Style CSS*/
+
+header {
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	background-color: #00B3AA;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+	color: white;
+	position: relative;
+	z-index: 800;
+}
+
+#right-sec {
+	display: flex;
+	align-items: center;
+	width: auto;
+	justify-content: space-between;
+}
+#img-profile {
+	max-width: 30px;
+	max-height: 30px;
+}
+#plus-img {
+	max-width: 30px;
+	max-height: 30px;
+	margin-left: 10px;
+}
+#plus-img:hover {
+	cursor: pointer;
+}
+#header-pro-img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+#header-right-sec-1 {
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+#header-right-sec-1:hover {
+	cursor: pointer;
+}
+#header-right-sec-1 span {
+	margin-left: 10px;
+}
+
+#profile-img-click {
+	width: 150px;
+	height: 160px;
+	position: fixed;
+	background-color: #00B3AA;
+	border-radius: 10px;
+	color: white;
+	top: 8%;
+	left: 67%;
+	padding: 10px;
+	display: none;
+	z-index: 999;
+}
+
+#profile-img-click-ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin-top: 0;
+}
+#profile-img-click-ul li {
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+#main-sidebar-home-li:hover {
+	cursor: pointer;
+}
+
+
+/*Three DIV in Homepage Style CSS*/
+
+
+
+#main {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 10px;
+	height: 90vh;
+	z-index: 2;
+	position: relative;
+}
+#sidebar {
+	width: 19%;
+	height: 100%;
+	/*background-color: #00B3AA;*/
+	padding: 10px;
+	border: 2px solid #00B3AA;
+	display: flex;
+	justify-content: space-around;
+}
+#main_sec {
+	padding: 10px;
+	width: 55%;
+	height: auto;
+	border: 1px solid #00B3AA;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#sidebar_active_member_sec {
+	padding: 10px;
+	width: 23%;
+	height: 100%;
+	border: 2px solid #00B3AA;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+/*Navigation bar Style CSSS*/
+
+.list1 {
+	list-style: none;
+	width: 100%;
+	font-size: 20px;
+	color: white;
+}
+.list1 li {
+	background-color: #00B3AA;
+	border-radius: 10px;
+	border: 1px solid white;
+	padding: 10px;
+}
+.list2 {
+	display: none;
+	list-style: none;
+	font-size: 15px;
+	color: white;
+	padding: 5px;
+}
+.list2 li {
+	padding: 10px;
+	background-color: #00B3B3;
+	border: 1px solid white;
+}
+#dept:hover {
+	cursor: pointer;
+}
+
+#res-sidebar:hover {
+	cursor: pointer;
+}
+#faq-sidebar {
+	cursor: pointer;
+}
+
+/*Main Section Style CSS ===  Search , Checkbox and Paragraph Section*/
+
+
+#searchbox {
+	width: 100%;
+	border-radius: 10px;
+	height: 50px;
+	border: 2px solid #00B3AA;
+	outline: 0px;
+	padding: 3px;
+	text-align: center;
+	font-size: 20px;
+}
+#checkboxforsearch {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	justify-content: space-around;
+	width: 100%;
+}
+#left-ch {
+	display: flex;
+	align-items: center;
+}
+#left-ch label {
+	margin-left: 10px;
+}
+#right-ch {
+	display: flex;
+	align-items: center;
+	
+}
+#right-ch label {
+	margin-left: 10px;
+}
+#chatbox-header {
+	background-color: grey;
+	padding: 10px;
+	color: white;
+}
+#chatbox-body {
+	margin-top: 20px;
+}
+#left-ch {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/*Search Box CSSS*/
+
+#main-page-sec-search-list {
+	position: fixed;
+	height: auto;
+	width: 600px;
+	overflow-y: scroll;
+	display: none;
+	overflow-x: hidden;
+	z-index: 100;
+	left: 26%;
+	top: 30%;
+}
+
+#main-page-sec-list li{
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+	height: 45px;
+	background: #00B3AA;
+	display: flex;
+	align-items: center;
+	color: white;
+	justify-content: space-between;
+	margin: auto;
+	border-bottom: .5px solid white;
+}
+#main-page-sec-list li:hover {
+	background-color: #11D3C8;
+	cursor: pointer;
+}
+
+.listimg {
+	margin-left: 20px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+#activeimg {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: green;
+}
+#offlineimg {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+}
+#left-sec {
+	display: flex;
+	align-items: center;
+}
+#right-sec {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+#left-sec p {
+	margin-left: 15px;
+}
+.text2 {
+	margin-right: 20px;
+}
+
+/*Searchbox Style CSS*/
+
+/*ChatBox Stle CSS*/
+
+
+#chatbox-body-list li{
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+	height: 45px;
+	background: #0B9C94;
+	color: white;
+	border-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	border-bottom: .5px solid;
+}
+
+#chatbox-body-list li:hover {
+	background-color: #11D3C8;
+	cursor: pointer;
+}
+
+#contain-leftright {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+#left-sec2 {
+	width: 80%;
+	display: flex;
+	align-items: center;
+}
+#left-sec2 p {
+	margin-left: 10px;
+}
+#right-sec2 {
+	display: flex;
+	align-items: center;
+}
+.listimg2 {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+/*Add Status CSS style*/
+
+#status {
+	width: 700px;
+	height: auto;
+	background-color: #00B3AA;
+	padding: 20px;
+	border-radius: 10px;
+	display: none;
+	position: fixed;
+	left: 21.7%;
+	top: 22%;
+	color: white;
+	z-index: 120;
+}
+#status ul {
+	list-style: none;
+	width: 100%;
+}
+#chlist, #placehlist, #subjectlist,#btn {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+	align-items: center;
+}
+
+#chlist select, #placehlist select, #subjectlist select {
+	flex: 2;
+}
+
+.chosen-container .chosen-results {
+	max-height: 75px;
+}
+
+#chlist label, #placehlist label, #subjectlist label {
+	flex: 1;
+}
+#btnsubmit {
+	width: 100px;
+	height: 30px;
+	border-style: none;
+}
+#btnsubmit:hover {
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid white;
+}
+#btncancel {
+	width: 100px;
+	height: 30px;
+	border-style: none;
+	margin-right: 5px;
+}
+#btncancel:hover {
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+/*In Main Section Posted Status DIV Design*/
+
+.cur_status {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding: 7px;
+	border: 1px solid #00B3AA;
+	margin-bottom: 5px;
+}
+#pro-img {
+	max-width: 30px;
+	max-height: 30px;
+}
+
+#pro img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+#pro {
+	display: flex;
+	align-items: center;
+}
+
+#header-for-status {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#rightside .btn1 {
+	margin-right: 10px;
+	padding: 1px;
+	background-color: transparent;
+	border-style: none;
+}
+#rightside .btn1:hover {
+	cursor: pointer;
+}
+#rightside .btn2 {
+	padding: 1px;
+	background-color: transparent;
+	border-style: none;
+}
+#rightside .btn2:hover {
+	cursor: pointer;
+}
+#pro span {
+	margin-left: 10px;
+}
+#content {
+	margin-top: 5px;
+}
+#content ul li {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #00B3AA;
+	width: 100%;
+	padding: 5px;
+}
+#content ul li:last-child {
+	border-bottom: 0px;
+}
+#content ul li span {
+	flex: 1;
+}
+.edit-status-in-profile {
+	margin-right: 20px;
+}
+
+
+/*ChatBox for Message Chatting CSS Style*/
+
+
+.ui-widget-header {
+	background-color: #00B3AA;
+	font-size: 12px;
+}
+.ui-dialog-content {
+	font-size: 12px;
+}
+
+.chat-history {
+	margin-top: 5px;
+	height: 350px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-bottom: 15px;
+	padding: 16px;
+	width: 320px;
+	border: 1px solid #00B3AA;
+}
+#btn-for-send {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 10px; 
+}
+.text-area-for-msg {
+	width: 100%;
+	resize: none;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 50px;
+	border: 1px solid #00B3AA;
+}
+#btn-for-send {
+	margin-top: 10px;
+	width: 100%;
+}
+#btn-send-chat {
+	padding: 3px;
+	width: 100px;
+	border-style: none;
+	border: 1px solid #00B3AA;
+}
+#btn-send-chat:hover {
+	cursor: pointer;
+}
+
+/* TextArea gobal CSS */
+
+textarea {
+	font-size: 1.2em;
+}
+
+
+
+/*View Profile CSS Design*/
+
+#view-profile-page-sec {
+	width: auto;
+	height: auto;
+}
+#view-profile-page-sec-ul {
+	display: flex;
+	flex-direction: column;
+}
+#pro-res-domain-sec span{
+	margin-bottom: 20px;
+}
+#pro-subs-sec span {
+	margin-bottom: 20px;
+}
+#profile-img {
+	max-width: 130px;
+	max-height: 130px;
+}
+#profile-img img {
+	width: 130px;
+	height: 130px;
+}
+#pro-img-follow {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+#pro-dept-sec, #pro-name-sec, #pro-id-sec {
+	display: flex;
+	justify-content: space-between;
+}
+#pro-dept-sec, #pro-name-sec, #pro-id-sec{
+	border-bottom: 1px solid green;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+#pro-subs-sec, #pro-res-domain-sec {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+#pro-btn-status {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 130px;
+	height: 130px;
+}
+#pro-btn-status-ul {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	list-style: none;
+	align-items: center;
+}
+#pro-status-activity-text-sec {
+	display: flex;
+	justify-content: space-between;
+	width: 90px;
+}
+#btn-follow-click {
+	width: 70px;
+	align-self: flex-end;
+	padding: 7px;
+}
+#btn-follow-click:hover {
+	cursor: pointer;
+}
+#profile-message-box-btn {
+	width: 70px;
+	align-self: flex-end;
+	padding: 7px;
+}
+#profile-message-box-btn:hover {
+	cursor: pointer;
+}
+
+
+/*Chatbox message send css style*/
+
+#chatbox_list_text_msg {
+	width: 100%;
+	height: auto;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+#chatbox_list_text_msg li {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #00B3AA;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#timestamp-for-msg-right {
+	align-self: flex-end;
+}
+#chatbox_list_text_msg li p {
+	overflow-wrap: break-word;
+	font-size: 12px;
+}
+
+
+/* FAQ Page CSS Design */
+
+
+#faq-question-section {
+	display: flex;
+	flex-direction: column;
+}
+.question-ans-hide {
+	display: none;
+}
+.question-faq:nth-of-type(even) {
+	background-color: #00B3AA;
+}
+.question-faq:nth-of-type(odd) {
+	background-color: #88DCD7;
+}
+.question-faq {
+	border-radius: 5px;
+	padding: 10px;
+	align-self: flex-start;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#button-on-faq-sec {
+	align-self: flex-end;
+	width: 250px;
+	display: flex;
+	justify-content: space-around;
+}
+#faq-reply-btn {
+	padding: 2px;
+	width: 100px;
+}
+#faq-showmore-btn {
+	padding: 2px;
+	width: 100px;
+}
+#question-first-sec {
+	margin-top: 10px;
+}
+#add-question-on-faq {
+	display: flex;
+	margin-bottom: 20px;
+}
+#faq-question-textarea {
+	height: 50px;
+	width: 800px;
+	resize: none;
+}
+.faq-question-textarea-2 {
+	height: 50px;
+	resize: none;
+	width: 800px;
+}
+#faq-add-question-btn {
+	height: 30px;
+	margin-left: 30px;
+	padding: 5px;
+	list-style: none;
+}
+.reply-btn-for-faq {
+	height: 30px;
+	width: 100px;
+	margin-left: 30px;
+	padding: 5px;
+	list-style: none;
+}
+.add-question-on-faq-2 {
+	margin-top: 20px;
+}
+
+
+/* Setting Page CSS Design */
+
+#setting-view-page {
+	width: 700px;
+	background-color: #00B3AA;
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	position: fixed;
+	top: 13%;
+	left: 21.6%;
+	border-radius: 10px;
+	z-index: 930;
+	box-shadow: 5px 5px 10px;
+}
+
+#sidebar2 {
+	width: 30%;
+	height: 100%;
+	padding: 10px;
+	border: 1px solid white;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.list13 {
+	list-style: none;
+	width: 100%;
+	font-size: 20px;
+	color: white;
+}
+.list13 li {
+	background-color: #00B3AA;
+	border-radius: 10px;
+	border: 1px solid white;
+	padding: 10px;
+}
+#setting-main {
+	padding: 10px;
+	border: 1px solid white;
+	width: 67%;
+}
+#edit-profile-sec {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+#edit-profile-sec li {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding: 10px;
+	align-items: center;
+}
+.input-txt {
+	width: 70%;
+	height: 30px;
+}
+#edit-pro-btn {
+	height: 30px;
+	width: 100px;
+}
+#sidebar-change-pass-btn:hover {
+	cursor: pointer;
+}
+#sidebar-edit-pro-btn:hover {
+	cursor: pointer;
+}
+#sidebar-go-to-main-btn:hover {
+	cursor: pointer;
+}
+#edit-profile-sec li span {
+	color: white;
+}
+.edit-pro-submit-btn {
+	cursor: pointer;
+}
+.change-pass-submit-btn {
+	cursor: pointer;
+}
+
+
+
+/* Research Paper Page Style */
+
+#sidebar_upload_file:hover {
+	cursor: pointer;
+}
+#sidebar_my_list:hover {
+	cursor: pointer;
+}
+#go-to-homepage:hover{
+	cursor: pointer;
+}
+#upload-res-paper-btn:hover {
+	cursor: pointer;
+}
+
+/* Main Content CSS List */
+
+#main-content {
+	margin-top: 20px;
+}
+#main-content-table {
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 16px;
+	width: 100%;
+}
+#main-content-table th {
+	background-color: #00B3AA;
+	text-align: left;
+	color: white;
+}
+#main-content-table tr {
+	border-bottom: 1px solid #00B3AA;
+}
+#main-content-table tr:nth-child(1) {
+
+}
+#main-content-table th, #main-content-table td {
+	padding: 8px 10px;
+}
+.btn {
+	width: 100px;
+	height: 20px;
+	cursor: pointer;
+	list-style: none;
+	border: 1px solid #00B3AA;
+}
+
+
+/* Search by domain name */
+
+#search_by_domain_name {
+	width: 300px;
+	height: 30px;
+}
+
+
+/* Upload Paper CSS Style */
+
+#research_paper_upload_sec {
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+}
+#input-for-research {
+	display: flex;
+	flex-direction: column;
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.flex-col span {
+	margin-bottom: 30px;
+}
+#research-submit-btn button {
+	width: 100px;
+	height: 30px;
+	margin-top: 20px;
+}
